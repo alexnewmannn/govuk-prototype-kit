@@ -19,18 +19,11 @@
 {% endblock %}
 
 {% block beforeContent %}
-  <div class="govuk-breadcrumbs">
-    <ol class="govuk-breadcrumbs__list">
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="#">Section</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link">Subsection</a>
-      </li>
-    </ol>
+  <div class="app-step-nav-header">
+    <span class="app-step-nav-header__part-of">Part of</span>
+      <a href="/learn-to-drive-a-car" class="app-step-nav-header__title">
+        Learn to drive a car: step by step
+      </a>
   </div>
 {% endblock %}
 
@@ -65,6 +58,15 @@
     </div>
 
     <div class="govuk-grid-column-one-third">
+
+      <div class="app-step-nav-related app-step-nav-related--singular">
+        <h2 class="app-step-nav-related__heading">
+          <span class="app-step-nav-related__pretitle">Part of</span>
+          <a href="/learn-to-drive-a-car" class="app-step-nav-related__link" data-track-category="stepNavPartOfClicked" data-track-action="Part of" data-track-label="/learn-to-drive-a-car" data-track-dimension="Learn to drive a car: step by step" data-track-dimension-index="29" data-track-options="{&quot;dimension96&quot; : &quot;e01e924b-9c7c-4c71-8241-66a575c2f61f&quot; }">
+            Learn to drive a car: step by step
+          </a>
+        </h2>
+      </div>
 
       <div id="step-by-step-navigation" class="app-step-nav app-step-nav--active" data-show-text="Show" data-hide-text="Hide" data-show-all-text="Show all" data-hide-all-text="Hide all">
         <ol class="app-step-nav__steps">
